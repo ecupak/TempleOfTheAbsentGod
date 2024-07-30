@@ -4,7 +4,7 @@
 
 This was a university project from my Year 1 Block A studies at BUas. It is a reimagined version of Pitfall 3.
 
-The biggest highlight of the project is that you can <b>freeze/rewind time</b>!
+I'm most proud of the <b>freeze/rewind time</b> feature!
 
 I still have a lot of ideas for expanding upon this, one day.
 

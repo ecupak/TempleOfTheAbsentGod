@@ -50,6 +50,7 @@ void ArcherShootingState::Enter(const bool isRewindEntry)
 	if (!isRewindEntry)
 	{
 		ShootArrow();
+		archer_.sprite_->SetFrame(4);
 	}
 }
 
@@ -113,6 +114,7 @@ void ArcherShootingState::Update(const float deltaTime)
 		}
 	}
 }
+
 
 void ArcherShootingState::ShootArrow()
 {

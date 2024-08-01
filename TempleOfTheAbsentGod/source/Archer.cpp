@@ -42,7 +42,7 @@ Archer::Archer()
 	spriteSheets_ = new Sprite * [spriteSheetsCount_];
 	spriteSheets_[SpriteSheet::Standing] = new Sprite{ new Surface{"assets/sprites/archer.png"}, true, static_cast<int>(shape_->size_.x), static_cast<int>(shape_->size_.y) };
 	spriteSheets_[SpriteSheet::Walking] = new Sprite{ new Surface{"assets/sprites/archer.png"}, true, static_cast<int>(shape_->size_.x), static_cast<int>(shape_->size_.y) };
-	spriteSheets_[SpriteSheet::Alert] = new Sprite{ new Surface{"assets/sprites/archer.png"}, true, static_cast<int>(shape_->size_.x), static_cast<int>(shape_->size_.y) };
+	spriteSheets_[SpriteSheet::Alert] = new Sprite{ new Surface{"assets/sprites/archer_attack.png"}, true, static_cast<int>(shape_->size_.x), static_cast<int>(shape_->size_.y) };
 	spriteSheets_[SpriteSheet::Shooting] = new Sprite{ new Surface{"assets/sprites/archer_attack.png"}, true, static_cast<int>(shape_->size_.x), static_cast<int>(shape_->size_.y) };
 	spriteSheets_[SpriteSheet::Recoiling] = new Sprite{ new Surface{"assets/sprites/archer.png"}, true, static_cast<int>(shape_->size_.x), static_cast<int>(shape_->size_.y) };
 
@@ -185,7 +185,6 @@ void Archer::ProcessTimers(float deltaTime)
 	if (attackDelay_ > 0.0f)
 	{
 		attackDelay_ -= deltaTime;
-
 	}
 }
 

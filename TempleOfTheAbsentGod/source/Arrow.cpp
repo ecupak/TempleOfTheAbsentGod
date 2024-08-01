@@ -34,6 +34,8 @@ Arrow::Arrow()
 
 Arrow::~Arrow()
 {
+	printf("Arrow deleted.");
+
 	delete prevPosition_;
 
 	delete arrowSprite_;

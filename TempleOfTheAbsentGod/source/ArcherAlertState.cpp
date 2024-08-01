@@ -37,7 +37,7 @@ ArcherAlertState::ArcherAlertState(Archer& archer, EnemyStateRewindData* rewindD
 void ArcherAlertState::Enter(const bool isRewindEntry)
 {
 	name_ = "Alert";
-	stateIndex_ = Archer::SpriteSheet::Shooting;
+	stateIndex_ = Archer::SpriteSheet::Alert;
 	archer_.SetSprite(stateIndex_);
 
 	SetHitboxData();
@@ -114,7 +114,7 @@ EnemyState* ArcherAlertState::HandleInput(const Action&, Command*&)
 void ArcherAlertState::Update(const float deltaTime)
 {
 	// Advance to aiming sprite frame.
-	if (archer_.sprite_->GetFrame() < 3)
+	if (archer_.sprite_->GetFrame() < 2)
 	{
 		if ((elapsedFrameTime_ += deltaTime) >= frameTime_)
 		{
